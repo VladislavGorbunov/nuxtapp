@@ -2,7 +2,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example"> 
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="green">Job</span>Find.pro</a> 
+            <a class="navbar-brand" href="#"><span class="green">Job</span>Spb.pro</a> 
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-toggler-icon"></span> 
             </button> 
