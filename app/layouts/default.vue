@@ -4,9 +4,7 @@
 
 <template>
   <div>
-    <div class="container">
-        <Navbar />
-        <slot />
-    </div>
+      <Topmenu />
+      <slot />
   </div>
 </template>
