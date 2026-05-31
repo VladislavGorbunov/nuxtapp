@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     definePageMeta({
         layout: 'auth-layout',
     })
@@ -49,7 +49,7 @@
 
         <div class="form-check mt-3">
             
-            <input @click="check" v-model="checkbox" class="form-check-input" type="checkbox" value="" id="check">
+            <input v-model="checkbox" class="form-check-input" type="checkbox" value="" id="check">
                 <label class="form-check-label" for="checkDefault">
                     Даю своё согласие на обработку персональных данных, подтверждаю согласие с Пользовательским соглашением и Правилами размещения 
                 </label>
@@ -64,7 +64,7 @@
     </div>
 </template>   
 
-<style>
+<style scoped>
     .auth-form-bg {
         position: relative;
         background: #fff;
