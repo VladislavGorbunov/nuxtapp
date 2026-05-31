@@ -48,7 +48,7 @@ import Brends from './Brends.vue';
     header {
         position: relative;
         height: 600px;
-        background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(235, 224, 252));
+        background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(224, 239, 252));
         background-size: cover;
     }
 
