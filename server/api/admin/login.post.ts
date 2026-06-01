@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import db from '../../../lib/db'
 
 const bodySchema = z.object({
   email: z.email(),
@@ -9,6 +10,10 @@ const bodySchema = z.object({
 export default defineEventHandler(async (event) => {
 
   const { email, password } = await readValidatedBody(event, bodySchema.parse)
+
+  const admin = await db('SELECT * FROM `admin` WHERE `email` = ' + '"' + email + '"')
+
+  console.log(admin?.length)
 
   if (email === 'limitorg2016@yandex.ru' && password === 'admin') {
     // set the user session in the cookie
