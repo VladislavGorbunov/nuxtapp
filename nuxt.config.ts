@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
   css: ['bootstrap/dist/css/bootstrap.min.css', './assets/css/main.css', 'bootstrap-icons/font/bootstrap-icons.min.css'],
-  
+
   app: {
     head: {
       meta: [
@@ -13,5 +13,13 @@ export default defineNuxtConfig({
       script: [{ src: '/js/bootstrap.min.js', tagPosition: 'bodyClose' }]
     },
   },
-})
 
+  modules: ['nuxt-auth-utils'],
+  runtimeConfig: {
+    session: {
+      maxAge: 60 * 60 * 24 * 7, // 1 week
+      password: process.env.NUXT_SESSION_PASSWORD || ''
+    }
+  }
+  
+})

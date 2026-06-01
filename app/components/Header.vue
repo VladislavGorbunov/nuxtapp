@@ -4,40 +4,36 @@ import Brends from './Brends.vue';
 </script>
 
 <template>
-    
+    <Navbar />
     <header>
-        <Navbar />
+        
         
         <div class="flex-container d-flex flex-column align-items-center justify-content-center">
             <div class="container">
                 <h1 class="text-center col-9 mx-auto fs-1"><span class="green">Работа в Санкт-Петербурге</span> - свежие вакансии от работадателей каждый день</h1>
-                <p class="text-center col-8 mx-auto">Свежие вакансии от прямых работадаталей в Санкт-Петербурге и Ленинградской области. Найти работу в своём городе проще чем кажется!</p>
+                <p class="text-center col-8 mx-auto fs-6">НаРаботе.топ - это свежие вакансии от прямых работадаталей в Санкт-Петербурге и Ленинградской области. Найти работу в своём городе проще чем кажется!</p>
             </div>
 
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-2">
-                <a href="" class="btn btn-primary btn-header me-0 me-md-4">Смотреть вакансии</a>
+           
+            <div class="container mt-2 mb-3">
+                <div class="d-flex align-items-center justify-content-center flex-wrap gap-3">
+                    <div class="category-col col-auto">Продавец-консультант</div>
+                    <div class="category-col col-auto">Водитель</div>
+                    <div class="category-col col-auto">Велокурьер</div>
+                    <div class="category-col col-auto">Автокурьер</div>
+                    <div class="category-col col-auto">Слесарь ремонтник</div>
+                    <div class="category-col col-auto">Электромонтёр</div>
+                    <div class="category-col col-auto">Разнорабочий</div>
+                    <div class="category-col col-auto">Оператор станка с ЧПУ</div>
+                    
+                </div>
+            </div>
+            <Brends />
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-4 mb-5">
+                <a href="" class="btn btn-primary btn-header me-0 me-md-4">Смотреть все вакансии</a>
                 <NuxtLink to="/employer/auth" class="btn btn-primary-outline btn-header mt-2 mt-md-0">Найти сотрудника</NuxtLink>
             </div>
-            <!-- <div class="container mt-5">
-                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
-                    <div class="category-col">Продавец-консультант</div>
-                    <div class="category-col">Водитель</div>
-                    <div class="category-col">Велокурьер</div>
-                    <div class="category-col">Автокурьер</div>
-                    <div class="category-col">Слесарь ремонтник</div>
-                    <div class="category-col">Электромонтёр</div>
-                    <div class="category-col">Разнорабочий</div>
-
-                    <div class="category-col">Охранник</div>
-                    <div class="category-col">Производитель работ</div>
-                    <div class="category-col">Менеджер по продажам</div>
-                    <div class="category-col">Оператор станка с ЧПУ</div>
-                    <div class="category-col">Слесарь ремонтник</div>
-                    <div class="category-col">Электромонтёр</div>
-                    <div class="category-col">Разнорабочий</div>
-                </div>
-            </div> -->
-            <Brends />
+            
         </div>
         
         
@@ -47,13 +43,15 @@ import Brends from './Brends.vue';
 <style>
     header {
         position: relative;
-        height: 600px;
-        background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(224, 239, 252));
+        min-height: 470px;
+        background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(239, 236, 255));
         background-size: cover;
+        padding: 30px 0px;
+        overflow: hidden;
     }
 
     .flex-container {
-        height: 480px;
+        min-height: 470px;
     }
 
     .header-layer {
@@ -71,7 +69,7 @@ import Brends from './Brends.vue';
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: 600;
-        font-size: 44px;
+        font-size: 40px;
         color: #223;
         z-index: 1;
     }
@@ -92,15 +90,20 @@ import Brends from './Brends.vue';
     }
 
     .btn-header {
-        width: 200px;
+        width: 240px;
     }
 
     .category-col {
         font-size: 14px;
-        color: #6b618a;
-        border: 1px dashed #d6cfeb;
-        border-radius: 20px;
+        color: rgb(64, 76, 99);
+        border: 0px solid #d6cfeb;
+        background: #ffffff;
+        border-radius: 8px;
         text-align: center;
-        padding: 5px 25px;
+        padding: 7px 20px;
+        font-weight: 500;
+        opacity: 1;
     }
+
+
 </style>

@@ -2,7 +2,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example"> 
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="green">На</span>Работе</a> 
+            <a class="navbar-brand" href="#"><span class="green">На</span>Работе.топ</a> 
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-toggler-icon"></span> 
             </button> 
@@ -50,7 +50,7 @@
     .navbar {
         position: relative;
         z-index: 1;
-        background: rgba(255,255,255, 0.2);
+        background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(239, 236, 255));
         padding: 15px 0;
         box-shadow: 0 3px 15px -16px #655671;
     }

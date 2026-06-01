@@ -1,5 +1,5 @@
 <template>
-    <div class="container brend-block d-none d-lg-flex justify-content-evenly align-items-center position-absolute gap-5">
+    <div class="container brend-block d-none d-lg-flex justify-content-evenly align-items-center gap-3">
             
                 <div class="brend-col d-flex align-items-center ">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/%D0%90%D0%9E_%D0%90%D0%AD%D0%9C-%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9B%D0%9E%D0%93%D0%98%D0%98_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B3%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%80%D1%83%D1%81.png/1280px-%D0%90%D0%9E_%D0%90%D0%AD%D0%9C-%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9B%D0%9E%D0%93%D0%98%D0%98_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B3%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%80%D1%83%D1%81.png" class="img-fluid">
@@ -10,11 +10,15 @@
                 </div>
 
                 <div class="brend-col d-flex align-items-center ">
+                    <img src="https://avatars.mds.yandex.net/get-lpc/10704932/82ae5323-9dd8-4617-b326-e4c065587c3e/orig" class="img-fluid">
+                </div>
+
+                <div class="brend-col d-flex align-items-center ">
                     <img src="https://hvac-expert.ru/upload/iblock/7b6/yrbfrti4hyfbbg3xlzsoa1z452jl4poh.png" class="img-fluid">
                 </div>
 
                 <div class="brend-col d-flex align-items-center ">
-                    <img src="https://regentrus.ru/upload/iblock/f81/vy6f7x6ar1a047wx1mxf0jj4rpihmevs.jpg" class="img-fluid">
+                    <img src="https://tc-sormovsky.ru/upload/iblock/36f/9za7blpagk0h5dj7yiogmy6fd2aeiao8.png" class="img-fluid">
                 </div>
 
                 <div class="brend-col d-flex align-items-center ">
@@ -33,23 +37,22 @@
 
 <style scoped>
     .brend-block {
-        bottom: 60px;
+        bottom: 30px;
     }
 
     .brend-col {
         background: #fff;
         width: 15%;
         border-radius: 10px;
-        height: 60px;
-        padding: 0 30px;
-        opacity: 0.5;
+        height: 50px;
+        padding: 0 27px;
+        opacity: 0.8;
         transition: 1s;
-        box-shadow: 0 0px 15px -12px #111;
     }
 
     .brend-col:hover {
         opacity: 1;
-        transform: rotate(0deg);
+        transform: scale(1.05);
         transition: 1s;
     }
 
