@@ -6,30 +6,16 @@ import Brends from './Brends.vue';
 <template>
     <Navbar />
     <header>
-        
-        
+    
         <div class="flex-container d-flex flex-column align-items-center justify-content-center">
             <div class="container">
-                <h1 class="text-center col-9 mx-auto fs-1"><span class="green">Работа в Санкт-Петербурге</span> - свежие вакансии от работадателей каждый день</h1>
+                <h1 class="text-center col-9 mx-auto fs-1">Работа <span class="green">в Санкт-Петербурге</span> - свежие вакансии от работадателей каждый день</h1>
                 <p class="text-center col-8 mx-auto fs-6">НаРаботе.топ - это свежие вакансии от прямых работадаталей в Санкт-Петербурге и Ленинградской области. Найти работу в своём городе проще чем кажется!</p>
             </div>
 
-           
-            <div class="container mt-2 mb-3">
-                <div class="d-flex align-items-center justify-content-center flex-wrap gap-3">
-                    <div class="category-col col-auto">Продавец-консультант</div>
-                    <div class="category-col col-auto">Водитель</div>
-                    <div class="category-col col-auto">Велокурьер</div>
-                    <div class="category-col col-auto">Автокурьер</div>
-                    <div class="category-col col-auto">Слесарь ремонтник</div>
-                    <div class="category-col col-auto">Электромонтёр</div>
-                    <div class="category-col col-auto">Разнорабочий</div>
-                    <div class="category-col col-auto">Оператор станка с ЧПУ</div>
-                    
-                </div>
-            </div>
+            <HeaderListVacancy />
             <Brends />
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-4 mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 mb-5">
                 <a href="" class="btn btn-primary btn-header me-0 me-md-4">Смотреть все вакансии</a>
                 <NuxtLink to="/employer/auth" class="btn btn-primary-outline btn-header mt-2 mt-md-0">Найти сотрудника</NuxtLink>
             </div>
@@ -93,17 +79,7 @@ import Brends from './Brends.vue';
         width: 240px;
     }
 
-    .category-col {
-        font-size: 14px;
-        color: rgb(64, 76, 99);
-        border: 0px solid #d6cfeb;
-        background: #ffffff;
-        border-radius: 8px;
-        text-align: center;
-        padding: 7px 20px;
-        font-weight: 500;
-        opacity: 1;
-    }
+    
 
 
 </style>

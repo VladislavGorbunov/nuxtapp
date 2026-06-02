@@ -1,17 +1,17 @@
 import mysql from 'mysql2/promise';
 
-async function db(query: string) {
+async function db(sql: string) {
     try {
         await using connection = await mysql.createConnection({
-            host: 'localhost',
+            host: 'MySQL-8.4',
             user: 'root',
-            password: 'root',
+            password: '',
             database: 'nuxt',
         });
-
-        const [results, fields] = await connection.query(query);
-
-        return results
+        
+        const [result, fields] = await connection.query(sql);
+        
+        return result
     } catch (e: any) {
         console.log('Ошибка базы данных: ' + e.errors)
     }
