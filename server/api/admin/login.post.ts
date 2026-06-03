@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import db from '../../../lib/db'
+import { QueryResult } from 'mysql2'
 
 const bodySchema = z.object({
   email: z.email(),
@@ -11,20 +12,25 @@ export default defineEventHandler(async (event) => {
 
   const { email, password } = await readValidatedBody(event, bodySchema.parse)
 
-  const result = await db('SELECT * FROM `admin` WHERE `email` = ' + '"' + email + '"')
+  const result = await db('SELECT * FROM `admin` WHERE `email` = ' + '"' + email + '" LIMIT 1')
 
-  if (email === 'limitorg2016@yandex.ru' && password === 'admin') {
-    // set the user session in the cookie
-    // this server util is auto-imported by the auth-utils module
-    await setUserSession(event, {
-      user: {
-        name: 'John Doe',
-      },
-    })
-    return {}
-  }
+  console.log(result)
+
+    if (email == result[0].email && password == result[0].password) {
+    
+      await setUserSession(event, {
+        user: {
+          name: result[0].name,
+        },
+      })
+      return {}
+    }
+    
+  
+
   throw createError({
-    status: 401,
-    message: 'Bad credentials',
+      status: 401,
+      message: 'Bad credentials',
+    })
   })
-})
+  
