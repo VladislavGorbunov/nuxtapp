@@ -10,8 +10,9 @@ async function db(query: string) {
         });
 
         const [results, fields] = await connection.query(query);
-
+        
         return results
+      
     } catch (e: any) {
         console.log('Ошибка базы данных: ' + e.errors)
     }

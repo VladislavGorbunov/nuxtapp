@@ -11,9 +11,7 @@ export default defineEventHandler(async (event) => {
 
   const { email, password } = await readValidatedBody(event, bodySchema.parse)
 
-  const admin = await db('SELECT * FROM `admin` WHERE `email` = ' + '"' + email + '"')
-
-  console.log(admin?.length)
+  const result = await db('SELECT * FROM `admin` WHERE `email` = ' + '"' + email + '"')
 
   if (email === 'limitorg2016@yandex.ru' && password === 'admin') {
     // set the user session in the cookie
