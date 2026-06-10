@@ -17,8 +17,10 @@ import Brends from './Brends.vue';
             <Brends />
             <Search />
         </div>
-        
-        
+
+        <div class="arrow-bottom">
+            <i class="bi bi-caret-down-fill"></i>
+        </div>
     </header>
 </template>
 
@@ -29,6 +31,22 @@ import Brends from './Brends.vue';
         background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(239, 236, 255));
         background-size: cover;
         padding: 30px 0px;
+    }
+
+    .arrow-bottom {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        bottom: -10px;
+        left: calc(50% - 16px);
+        text-align: center;
+    }
+
+    .arrow-bottom .bi {
+        font-size: 30px;
+        background: -webkit-linear-gradient(90deg, #12bd68, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .flex-container {

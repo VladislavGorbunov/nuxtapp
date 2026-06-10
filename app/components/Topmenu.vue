@@ -12,7 +12,7 @@
             </div>
 
             <div class="d-flex flex-row gap-3">
-                <a href="mailto:info@mehportal.ru" class="d-none d-md-block email"><i class="bi bi-envelope-at"></i> info@kolpino.pro</a>
+                <a href="mailto:info@mehportal.ru" class="d-none d-md-block email"><i class="bi bi-envelope-at"></i> info@jobfind.net</a>
                 
             </div> 
             

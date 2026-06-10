@@ -135,6 +135,7 @@
     padding: 5px 0px;
     margin: 0px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .post-search-block p:last-child {
@@ -142,6 +143,7 @@
     padding: 10px 0px;
     margin: 0px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .search-block .btn-primary {
