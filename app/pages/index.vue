@@ -16,7 +16,7 @@
     <Header />
 
     <div class="container">
-        <h2 class="text-center mt-4 mb-0">Актуальные вакансии на сегодня</h2>
+        <h2 class="text-center mt-4 mb-0">Свежие вакансии в Санкт-Петербурге</h2>
         <p class="text-center mt-0">ТОП-6 выгодных вакансий курьером</p>
     <div class="row">
     <div class="col-4 mb-4" v-for="offer of offers">

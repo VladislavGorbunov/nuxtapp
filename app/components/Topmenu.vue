@@ -24,8 +24,8 @@
 
 <style>
     .top-menu {
-        background: #223;
-        padding: 4px 0;
+        background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(239, 237, 253));
+        padding: 3px 0;
         border-bottom: 1px solid rgb(236, 239, 247);
         font-size: 13px;
         text-decoration: none;
@@ -33,6 +33,6 @@
 
     .top-menu a {
         text-decoration: none;
-        color: #9895a2;
+        color: #797681;
     }
 </style>

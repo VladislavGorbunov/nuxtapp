@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
     background: rgb(51, 113, 228);
     padding: 14px 25px;
     border: none;
+    font-weight: 400;
+}
+
+.btn-bold {
     font-weight: 500;
 }
 
@@ -58,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary-outline:hover {
     background: rgba(255,255,255,0.3);
-    
     border: 1px solid rgb(51, 113, 228);
     color: rgb(51, 113, 228);
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="container mt-2 mb-3">
-        <div class="d-flex align-items-center justify-content-center flex-wrap gap-3">
+        <div class="d-flex align-items-center justify-content-evenly flex-wrap gap-3">
             <div class="category-col col-auto">Продавец-консультант</div>
             <div class="category-col col-auto">Водитель</div>
             <div class="category-col col-auto">Велокурьер</div>
