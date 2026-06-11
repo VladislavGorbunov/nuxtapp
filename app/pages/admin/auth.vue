@@ -3,6 +3,8 @@ definePageMeta({
     layout: 'admin',
 })
 
+const errorMessage = ref('')
+
 const { loggedIn, user, fetch: refreshSession } = useUserSession()
 
 const credentials = reactive({
@@ -17,13 +19,23 @@ async function login() {
             method: 'POST',
             body: credentials,
         })
-
+        
         // Refresh the session on client-side and redirect to the home page
         await refreshSession()
-        await navigateTo('/admin')
-    } catch {
-        alert('Bad credentials')
+
+        
+        errorMessage.value = 'Входим'
+     
+        let int = setTimeout(async () => {
+            await navigateTo('/admin')
+        }, 1000)
+
+        
+    } catch (e) {
+        errorMessage.value = 'Ошибка авторизации'
     }
+
+    
 }
 </script>
 
@@ -35,5 +47,7 @@ async function login() {
         <button type="submit">
             Login go!
         </button>
+        <hr>
+        {{ errorMessage }}
     </form>
 </template>

@@ -1,6 +1,6 @@
 <template>
     
-    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example"> 
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed" aria-label="Eighth navbar example"> 
         <div class="container">
             <a class="navbar-brand" href="#"><span class="green">Like</span><i class="bi bi-hand-thumbs-up-fill"></i>Work</a> 
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -43,11 +43,12 @@
     }
 
     .navbar {
-        position: relative;
-        z-index: 1;
-        background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(239, 237, 253));
-        padding: 8px 0;
+        width: 100%;
+        z-index: 10;
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(239, 237, 253, 0.8));
+        padding: 18px 0;
         box-shadow: 0 2px 15px -16px #655671;
+        backdrop-filter: blur(15px);
     }
 
     .navbar-brand {
@@ -55,7 +56,7 @@
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 23px;
         color: #223;
     }
 

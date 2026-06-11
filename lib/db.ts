@@ -1,21 +1,15 @@
-import mysql from 'mysql2/promise';
+import { Sequelize, DataTypes } from 'sequelize';
 
-async function db(sql: string) {
+const sequelize = new Sequelize('mysql://root:root@localhost:3306/nuxt')
+
+async function db() {
     try {
-        await using connection = await mysql.createConnection({
-            // host: 'MySQL-8.4',
-            host: 'localhost',
-            user: 'root',
-            password: 'root',
-            database: 'nuxt',
-        });
-        
-        const [result, fields] = await connection.query(sql);
-        
-        return result
-    } catch (e: any) {
-        console.log('Ошибка базы данных: ' + e.errors)
+        await sequelize.authenticate();
+        console.log('Connection has been established successfully.');
+    } catch (error) {
+        console.error('Unable to connect to the database:', error);
     }
 }
-    
-export default db
+
+
+export {sequelize, db, DataTypes}

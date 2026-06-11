@@ -29,6 +29,7 @@
         border-bottom: 1px solid rgb(236, 239, 247);
         font-size: 13px;
         text-decoration: none;
+        
     }
 
     .top-menu a {

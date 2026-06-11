@@ -10,7 +10,7 @@ import Brends from './Brends.vue';
         <div class="flex-container d-flex flex-column align-items-center justify-content-center">
             <div class="container">
                 <h1 class="text-center col-9 mx-auto fs-1">Работа <span class="green">в Санкт-Петербурге</span> - свежие вакансии от работадателей каждый день</h1>
-                <p class="text-center col-8 mx-auto fs-6">JobSter.net - это свежие вакансии от прямых работадаталей в Санкт-Петербурге и Ленинградской области. Найти работу в своём городе проще чем кажется!</p>
+                <p class="text-center col-8 mx-auto fs-6">LikeWork - это свежие вакансии от прямых работадаталей в Санкт-Петербурге и Ленинградской области. Найти работу в своём городе проще чем кажется!</p>
             </div>
 
             <HeaderListVacancy />
@@ -30,7 +30,7 @@ import Brends from './Brends.vue';
         min-height: 470px;
         background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(239, 236, 255));
         background-size: cover;
-        padding: 30px 0px;
+        padding: 100px 0px 50px 0;
     }
 
     .arrow-bottom {
