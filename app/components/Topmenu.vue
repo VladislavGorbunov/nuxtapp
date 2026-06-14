@@ -24,7 +24,7 @@
 
 <style>
     .top-menu {
-        background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(239, 237, 253));
+        background: linear-gradient(90deg, rgb(255, 255, 255), rgb(239, 237, 253));
         padding: 3px 0;
         border-bottom: 1px solid rgb(236, 239, 247);
         font-size: 13px;

@@ -46,7 +46,7 @@
         width: 100%;
         z-index: 10;
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(239, 237, 253, 0.8));
-        padding: 18px 0;
+        padding: 20px 0;
         box-shadow: 0 2px 15px -16px #655671;
         backdrop-filter: blur(15px);
     }
@@ -56,7 +56,7 @@
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: 600;
-        font-size: 23px;
+        font-size: 24px;
         color: #223;
     }
 
@@ -82,7 +82,7 @@
     }
 
     .btn-navbar {
-        padding: 8px 20px;
+        padding: 10px 20px;
         /* background: #fff; */
         border: 0px solid rgba(51, 113, 228, 0.3);
         color: rgb(255, 255, 255);

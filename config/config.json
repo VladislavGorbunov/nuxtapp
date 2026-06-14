@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": "",
     "database": "nuxt",
-    "host": "127.0.0.1",
+    "host": "MySQL-8.4",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": "",
     "database": "nuxt",
-    "host": "127.0.0.1",
+    "host": "MySQL-8.4",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "root",
+    "password": "",
     "database": "nuxt",
-    "host": "127.0.0.1",
+    "host": "MySQL-8.4",
     "dialect": "mysql"
   }
 }
