@@ -102,20 +102,25 @@
 .search-block {
     position: relative;
     background: rgba(255,255,255, 1);
+    background-size: cover;
     min-height: 100px;
     border-radius: 20px;
     position: relative;
-    padding: 20px;
+    padding: 30px 20px;
     box-shadow: 0 2px 15px -12px #111;
     margin-top: 30px;
     z-index: 1;
+    overflow: hidden;
 }
+
+
 
 .search-block .form-control, .form-select {
     padding: 13px;
     border-radius: 12px;
     background: none;
     font-size: 15px;
+    background: #fff;
 }
 
 .post-search-block {

@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   css: ['bootstrap/dist/css/bootstrap.min.css', './assets/css/main.css', 'bootstrap-icons/font/bootstrap-icons.min.css'],
 
   app: {

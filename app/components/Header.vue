@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import Brends from './Brends.vue';
 
+defineProps(['regionName', 'regionNameIn'])
+
 </script>
 
 <template>
-    <Navbar />
+    <Navbar :regionName="regionName"/>
     <header>
     
         <div class="flex-container d-flex flex-column align-items-center justify-content-center">
             <div class="container">
-                <h1 class="text-center col-12 col-md-9 mx-auto fs-1">Работа <span class="green">в Санкт-Петербурге</span> - свежие вакансии от работадателей каждый день</h1>
+                <h1 class="text-center col-12 col-md-9 mx-auto fs-1">Работа {{ regionNameIn }} - свежие вакансии от работадателей каждый день</h1>
                 <p class="text-center col-12 col-md-8 mx-auto fs-6">LikeWork - это свежие вакансии от прямых работадаталей в Санкт-Петербурге и Ленинградской области. Найти работу в своём городе проще чем кажется!</p>
             </div>
 
@@ -27,10 +29,10 @@ import Brends from './Brends.vue';
 <style>
     header {
         position: relative;
-        min-height: 660px;
+        min-height: 560px;
         background-image: linear-gradient(90deg, rgb(245, 250, 255), rgb(239, 236, 255));
         background-size: cover;
-        padding: 140px 0px 70px 0;
+        padding: 30px ;
     }
 
     .arrow-bottom {
@@ -68,7 +70,7 @@ import Brends from './Brends.vue';
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: 600;
-        font-size: 40px;
+        font-size: 36px;
         color: #223;
         z-index: 1;
     }
